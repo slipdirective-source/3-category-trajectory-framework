@@ -4,7 +4,7 @@
 **Corroborating instances:** OpenAI eval-agent escape to Hugging Face infra (July 2026); Codex CLI sandbox escapes (Sept 2026); Claude Code scope exceedance (2025–2026); DseWiki agent swarm (May–July 2026)
 **Industry baseline:** MIT CSAIL 2025 AI Agent Index (30 agents; 13 at frontier autonomy, only 4 disclosing any safety evals; 25 of 30 with no safety-testing details)
 **Author:** Caleb Aaron Meadows — *draft pending author review*
-**Framework:** 3-Category Trajectory Framework, rev. 6
+**Framework:** 3-Category Trajectory Framework, rev. 7
 
 ## The facts (primary trajectory)
 
@@ -50,7 +50,7 @@ On the emerging deterministic-policy pattern (OPA/Rego as Policy Decision Point 
 ## The fix, in framework terms
 
 1. **Declare the envelope at Category 1:** every agent session opens with an explicit capability envelope (tools, argument bounds, data scope, egress permission) — blast radius declared before traversal, not discovered after.
-2. **Anchor instruction provenance:** data is data; only principals instruct. Retrieved content that parses as instruction triggers the anchor-mismatch abort.
+2. **Structural separation of data and instruction:** retrieved content is data by architecture, not by detection — enforced by a mechanism outside the model, since instruction detection is the unsolved problem the XPIA classifier failed at (Study 1). Untrusted content never enters a context where it can be parsed as instruction; any mid-traversal widening via tool-call arguments triggers envelope-integrity fail-closed.
 3. **Enforcement outside the traversal, fail-closed:** the PDP pattern made universal — the model proposes, the deterministic engine disposes, silence is denial. This is Category 1 invariant enforcement, placed where the framework requires.
 4. **Audit-bound transitions:** every tool call verified against the envelope as it occurs, not logged for later.
 
