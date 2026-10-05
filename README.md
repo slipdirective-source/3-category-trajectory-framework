@@ -1,9 +1,11 @@
-# 3-Category Trajectory Framework (rev. 5)
+# 3-Category Trajectory Framework (rev. 6)
 
 **Author:** Caleb Aaron Meadows
-**Published:** 2026-10-05
+**Published:** 2026-10-05 (rev. 6)
 **License:** CC BY 4.0 — share and adapt freely with attribution.
 **Status:** Living document. Revisions are governed by the framework's own rail-governance rules below.
+
+**Revision history.** rev. 6: added Anchor-independence as a core rail; constructed return edge for continuous systems; declared-rails scope statement; provenance-verifiability scoping for non-deterministic mechanisms. Prompted by adversarial review of the framework's first five case studies (Claude review, 2026-10-05).
 
 > *Things are known by the trajectory they produce, not by static description.*
 
@@ -34,7 +36,7 @@ Live evaluation, where the trajectory is actually produced.
 
 Completion, validation, and handoff.
 
-- **Deterministic Output:** validated, policy-compliant result or decision state
+- **Deterministic Output:** validated, policy-compliant result or decision state. For non-deterministic mechanisms (e.g., LLM inference), determinism is replaced by provenance-verifiability: the output must carry verifiable provenance binding it to its inputs, anchor, and audit trace. The requirement is verifiability, not determinism.
 - **Context Portability:** serialization, audit closure, handoff
 - **Autonomous Integrity:** every dependency crossing the boundary is verified at the crossing
 
@@ -52,6 +54,7 @@ Core rails:
 - **Fail-closed** (constitutive of this framework, not a universal law; a fail-open system is possible, it just isn't this one)
 - **Audit-completeness** (every transition recorded and verifiable; without it the root axiom fails)
 - **Anchor-existence** (verification must terminate in a root)
+- **Anchor-independence** (verification must terminate in a root *independent* of the traversal it governs; no party may author a redefinition of a rail that constrains its own activity — the measurer is not the measured, the judged does not write the judgment. Independence may be personal, a separate authority, or temporal, a prior declaration binding the later traversal — deployed code, a published policy, a recorded commitment. What it may not be is the presently-constrained party authoring its own relief. Where anchor and traversal are legitimately one, as in personal agency under its own declared intent, independence is satisfied by the prior declaration binding the later self; the failure mode there is self-deception, and the audit names it as such.)
 - **Envelope-integrity** (see below)
 
 **Envelope-integrity.** Effective capability may not exceed the declared envelope without detection. Implicit widening counts as a breach and triggers fail-closed. It includes:
@@ -63,9 +66,13 @@ Core rails:
 
 Explicit widening happens only through redefinition at the return edge. Fail-closed is the response to a breach, and envelope-integrity is what makes the breach visible, so it is named separately.
 
+**Scope: declared rails.** The framework audits declared rails. The Identity & Intent Anchor carries declared intent; enforcement mechanisms are audited against the anchor's declared intent — not against undeclared intent, however obvious in hindsight. A system whose declared rails are complete as written, but whose declarations omit the property whose failure mattered, fails at Category 1 declaration: the audit names the omission. The framework does not certify undeclared intent.
+
 **Actuation vs. redefinition.** Actuation is the rails working: narrowing scope, throttling, path isolation, fail-closed halts, circuit breakers. It is Category 2 business, always permitted, and may only tighten, never widen. Redefinition is the rails changing. It happens only at the return edge, and only for parametric rails.
 
-**Authorship and validation.** A redefinition is authored through the Identity & Intent Anchor. The closed audit trace justifies it by documenting the failure that motivated it, but it doesn't validate the new value. The anchor's intent does.
+**Constructed return edge.** Continuous systems — trading books, agents, ongoing operations — have no natural iteration boundary. They must construct their return edges: a declared halt-and-re-enter in which the traversal passes through Terminal Resolution and re-enters Invariant Initialization before any new rails take effect. A rail change made without a constructed return edge is mid-traversal redefinition, regardless of the authority that approved it. Authority does not substitute for the return edge, and the return edge does not substitute for independence — both are required.
+
+**Authorship and validation.** A redefinition is authored through the Identity & Intent Anchor. The closed audit trace justifies it by documenting the failure that motivated it, but it doesn't validate the new value. The anchor's intent does. Under anchor-independence, the authoring anchor must itself be independent of the traversal the redefinition relieves.
 
 **Anchor succession.** The anchor itself changes only by explicit succession:
 
