@@ -1,11 +1,11 @@
-# 3-Category Trajectory Framework (rev. 6)
+# 3-Category Trajectory Framework (rev. 7)
 
 **Author:** Caleb Aaron Meadows
-**Published:** 2026-10-05 (rev. 6)
+**Published:** 2026-10-05 (rev. 7)
 **License:** CC BY 4.0 — share and adapt freely with attribution.
 **Status:** Living document. Revisions are governed by the framework's own rail-governance rules below.
 
-**Revision history.** rev. 6: added Anchor-independence as a core rail; constructed return edge for continuous systems; declared-rails scope statement; provenance-verifiability scoping for non-deterministic mechanisms. Prompted by adversarial review of the framework's first five case studies (Claude review, 2026-10-05).
+**Revision history.** rev. 7: temporal independence now requires resistance to revision by the bound party (a declaration is not a binding); added audit-independence requirement for compliance audits. Prompted by second-round adversarial review of the case studies (Claude review, 2026-10-05). rev. 6: added Anchor-independence as a core rail; constructed return edge for continuous systems; declared-rails scope statement; provenance-verifiability scoping for non-deterministic mechanisms. Prompted by adversarial review of the framework's first five case studies (Claude review, 2026-10-05).
 
 > *Things are known by the trajectory they produce, not by static description.*
 
@@ -54,7 +54,7 @@ Core rails:
 - **Fail-closed** (constitutive of this framework, not a universal law; a fail-open system is possible, it just isn't this one)
 - **Audit-completeness** (every transition recorded and verifiable; without it the root axiom fails)
 - **Anchor-existence** (verification must terminate in a root)
-- **Anchor-independence** (verification must terminate in a root *independent* of the traversal it governs; no party may author a redefinition of a rail that constrains its own activity — the measurer is not the measured, the judged does not write the judgment. Independence may be personal, a separate authority, or temporal, a prior declaration binding the later traversal — deployed code, a published policy, a recorded commitment. What it may not be is the presently-constrained party authoring its own relief. Where anchor and traversal are legitimately one, as in personal agency under its own declared intent, independence is satisfied by the prior declaration binding the later self; the failure mode there is self-deception, and the audit names it as such.)
+- **Anchor-independence** (verification must terminate in a root *independent* of the traversal it governs; no party may author a redefinition of a rail that constrains its own activity — the measurer is not the measured, the judged does not write the judgment. Independence may be personal, a separate authority, or temporal, a prior declaration binding the later traversal. Temporal independence holds only where the prior declaration *resists revision by the bound party* — deployed code the traversal cannot rewrite, a time-lock, external anchoring, or third-party attestation. A published policy its author may revise at will satisfies continuity but not independence: it is a declaration, not a binding. Where the binding is the author's own honor, as in personal agency under self-declared intent, independence is declared but weak; the audit treats the bound party as capable of self-revision and names self-deception as the failure mode.)
 - **Envelope-integrity** (see below)
 
 **Envelope-integrity.** Effective capability may not exceed the declared envelope without detection. Implicit widening counts as a breach and triggers fail-closed. It includes:
@@ -73,6 +73,8 @@ Explicit widening happens only through redefinition at the return edge. Fail-clo
 **Constructed return edge.** Continuous systems — trading books, agents, ongoing operations — have no natural iteration boundary. They must construct their return edges: a declared halt-and-re-enter in which the traversal passes through Terminal Resolution and re-enters Invariant Initialization before any new rails take effect. A rail change made without a constructed return edge is mid-traversal redefinition, regardless of the authority that approved it. Authority does not substitute for the return edge, and the return edge does not substitute for independence — both are required.
 
 **Authorship and validation.** A redefinition is authored through the Identity & Intent Anchor. The closed audit trace justifies it by documenting the failure that motivated it, but it doesn't validate the new value. The anchor's intent does. Under anchor-independence, the authoring anchor must itself be independent of the traversal the redefinition relieves.
+
+**Audit-independence.** The audit of compliance must itself satisfy independence: the auditor is not the audited. A self-audit — the framework's author auditing his own implementation, tests written by the same party — is legitimate but must declare itself as such, name self-deception as the failure mode, and state its verdict as clearing against declared rails *as attested by the author, pending independent review*. A self-audit presented as independent verification is the measurer-is-the-measured configuration this rail forbids. Independence of the rails (the binding resists the bound party) and independence of the audit (the verifier is separate from the verified) are distinct requirements; a system may satisfy the first while its audit awaits the second.
 
 **Anchor succession.** The anchor itself changes only by explicit succession:
 
