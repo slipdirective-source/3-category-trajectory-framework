@@ -1,4 +1,4 @@
-# The Trajectory Framework — in Plain English
+# The Trajectory Framework
 
 **By Caleb Aaron Meadows** · CC BY 4.0 · Plain-language companion to the 3-Category Trajectory Framework (rev. 7)
 
