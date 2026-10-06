@@ -54,7 +54,7 @@ Rules come in two kinds.
 
 **Settings** — limits, thresholds, budgets. These *can* change, but only *between* runs, never mid-drive. Mid-drive, you're only ever allowed to tighten, never loosen.
 
-One catch: some things never stop — running agents, trading books, ongoing operations. There is no automatic "between runs" for those; you have to build one by deliberately stopping, changing the settings, and restarting. The London Whale is what it looks like when settings get changed mid-drive with no stop and no boundary.
+One catch: some things never stop — running agents, trading books, ongoing operations. There is no automatic "between runs" for those; you have to build one by deliberately stopping, changing the settings, and restarting. The London Whale — the 2012 JPMorgan trading loss, where risk limits were raised mid-crisis — is what a settings change mid-drive looks like with no stop and no boundary.
 
 And one more: **a rulebook its author can rewrite at will is a diary, not a rulebook.** Real rules have to resist the person they bind — through code that can't be edited mid-run, time-locks, outside witnesses, or some equivalent. Otherwise it's just intentions with formatting.
 
