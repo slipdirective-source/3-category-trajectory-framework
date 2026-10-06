@@ -84,6 +84,6 @@ Anywhere something moves from start to finish and you need to know it stayed hon
 
 ## Where it came from
 
-Built by Caleb Aaron Meadows through adversarial testing — the framework was attacked by multiple AI systems across two full review rounds before publication, and every attack that landed changed the text. It's shared freely (CC BY 4.0): use it, adapt it, just keep the name on it.
+Built by Caleb Aaron Meadows through adversarial testing — attacked by multiple AI systems across review rounds before publication. What landed found gaps, not broken doctrine: the text got tighter, the foundation never moved. It's shared freely (CC BY 4.0): use it, adapt it, just keep the name on it.
 
 *The technical specification lives at [github.com/slipdirective-source/3-category-trajectory-framework](https://github.com/slipdirective-source/3-category-trajectory-framework).*
